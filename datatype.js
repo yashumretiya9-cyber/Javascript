@@ -59,8 +59,9 @@ function name(params)   {
 
 
 
+//Dynamic Typing
+let data = "gautam";
+data=   12;
+data= {};
 
-
-
-
-// dbfhbfg
+// javascript --> typescript
