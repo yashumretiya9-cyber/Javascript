@@ -16,3 +16,95 @@
 [![](https://visitcount.itsvg.in/api?id=yashumretiya9-cyber&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+
+
+
+
+
+// # JavaScript Datatypes
+
+// This README explains **JavaScript Datatypes** with all examples written in **one single JavaScript file** format.
+
+// ---
+
+// ## JavaScript Datatype Example (Single File)
+
+// ```js
+// // ===============================
+// // JavaScript Datatypes
+// // ===============================
+
+// // -------------------------------
+// // 1. Primitive Datatypes
+// // -------------------------------
+
+// // Number
+// let a = 10;
+// let b = a;
+// a = a + 5;
+
+// let e = 12;
+// e = 14.5;
+
+// // String
+// let d = "name";
+// d = "new name";
+// d = `name`;
+
+// // Boolean
+// let f = true;
+// f = false;
+
+// // Null
+// let g = null;
+
+// // Undefined
+// let h;
+
+// // Symbol
+// let u1 = Symbol("id");
+// let u2 = Symbol("id"); // u1 !== u2
+
+// let user = {
+//   uid: 1,
+//   name: "gautam",
+//   age: 24,
+//   email: "test@test.com"
+// };
+
+// let u3 = Symbol("uid");
+// user[u3] = "111";
+
+// // BigInt
+// let number = BigInt(123456789090);
+// number = number + 4n;
+
+// let number2 = 123456789090n;
+// number2 = number2 + 4n;
+
+// console.log(number);
+// console.log(number2);
+
+// // -------------------------------
+// // 2. Non-Primitive Datatypes
+// // -------------------------------
+
+// // Array
+// let v1 = [1, 2, 3];
+// let v2 = v1;
+// v1.pop(); // removes last element
+
+// let arr = ["name", "age", "email"];
+
+// // Object
+// let obj = {
+//   uid: 1,
+//   name: "gautam",
+//   age: 24,
+//   email: "gotu@gmail.com"
+// };
+
+// // Function
+// function name(params) {
+//   // function body
+// }
