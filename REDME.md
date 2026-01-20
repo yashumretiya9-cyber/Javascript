@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💫 About Me:
 🎓 I’m a Computer IT Student<br><br>💻 Currently learning HTML, CSS, JavaScript, React, php, AI<br><br>🌱 Exploring Frontend Animations & Backend Basics<br><br>🧠 Interested in Web Development & Open Source<br><br>💬 Ask me about HTML, CSS, JavaScript, React,AI<br><br>📫 Reach me at: yashumretiya9@email.com<br><br>⚡ Fun fact: I Use AI For Slove Problem
 
