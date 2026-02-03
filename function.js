@@ -789,3 +789,7 @@ function temp_var(){
 The output will be "Hello".
 This is because function declarations are hoisted to the top of their scope, meaning that the entire function definition is available before any code is executed. Therefore, when we call temp_var() before its definition, it works correctly and logs "Hello" to the console.
 */
+
+
+
+/* */
