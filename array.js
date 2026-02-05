@@ -691,14 +691,14 @@
 // 3. Find the total amount to pay
 
 // ### Q1. Shopping App – Discounted Total
-const prices = [200, 800, 1200, 450, 700];
+// const prices = [200, 800, 1200, 450, 700];
 
-const total = prices
-  .filter(price => price > 500)
-  .map(price => price * 0.9)
-  .reduce((sum, price) => sum + price, 0);
+// const total = prices
+//   .filter(price => price > 500)
+//   .map(price => price * 0.9)
+//   .reduce((sum, price) => sum + price, 0);
 
-console.log(total);
+// console.log(total);
 
 
 // Ans: const total = prices
@@ -720,14 +720,14 @@ console.log(total);
 
 // 3. Calculate total calories burned
 // ### Q2. Fitness App – Total Active Minutes
-const minutes = [20, 45, 60, 15, 90];
+// const minutes = [20, 45, 60, 15, 90];
 
-const totalCalories = minutes
-  .filter(min => min > 30)
-  .map(min => min * 5)
-  .reduce((total, cal) => total + cal, 0);
+// const totalCalories = minutes
+//   .filter(min => min > 30)
+//   .map(min => min * 5)
+//   .reduce((total, cal) => total + cal, 0);
 
-console.log(totalCalories);
+// console.log(totalCalories);
 
 
 
@@ -754,13 +754,13 @@ console.log(totalCalories);
 // 2. Calculate the average of passed marks
 
 // ### Q3. Exam System – Average of Passed Marks
-const marks = [35, 72, 88, 40, 25, 90];
+// const marks = [35, 72, 88, 40, 25, 90];
 
-const passed = marks.filter(mark => mark >= 40);
+// const passed = marks.filter(mark => mark >= 40);
 
-const average = passed.reduce((sum, mark) => sum + mark, 0) / passed.length;
+// const average = passed.reduce((sum, mark) => sum + mark, 0) / passed.length;
 
-console.log(average);
+// console.log(average);
 
 
 
@@ -784,14 +784,14 @@ console.log(average);
 // 3. Calculate total payou
 
 // ### Q4. Salary System – Monthly Payout
-const wages = [300, 800, 450, 1000, 600];
+// const wages = [300, 800, 450, 1000, 600];
 
-const totalPayout = wages
-  .filter(wage => wage > 500)
-  .map(wage => wage + 100)
-  .reduce((total, wage) => total + wage, 0);
+// const totalPayout = wages
+//   .filter(wage => wage > 500)
+//   .map(wage => wage + 100)
+//   .reduce((total, wage) => total + wage, 0);
 
-console.log(totalPayout);
+// console.log(totalPayout);
 
 
 // Ans: const totalPayout = wages
@@ -817,14 +817,14 @@ console.log(totalPayout);
 // 3. Calculate total points
 
 // ### Q5. Online Course – Completion Points
-const progress = [20, 50, 75, 40, 100];
+// const progress = [20, 50, 75, 40, 100];
 
-const totalPoints = progress
-  .filter(p => p >= 50)
-  .map(p => p * 2)
-  .reduce((sum, p) => sum + p, 0);
+// const totalPoints = progress
+//   .filter(p => p >= 50)
+//   .map(p => p * 2)
+//   .reduce((sum, p) => sum + p, 0);
 
-console.log(totalPoints);
+// console.log(totalPoints);
 
 
 // Ans: const totalPoints = progress
@@ -849,14 +849,14 @@ console.log(totalPoints);
 // 3. Calculate final credited amount
 
 // ### Q6. Bank Transactions – Final Balance
-const transactions = [1000, -500, 2000, -300, 1500];
+// const transactions = [1000, -500, 2000, -300, 1500];
 
-const creditedAmount = transactions
-  .filter(amount => amount > 0)
-  .map(amount => amount * 1.02)
-  .reduce((total, amount) => total + amount, 0);
+// const creditedAmount = transactions
+//   .filter(amount => amount > 0)
+//   .map(amount => amount * 1.02)
+//   .reduce((total, amount) => total + amount, 0);
 
-console.log(creditedAmount);
+// console.log(creditedAmount);
 
 
 // Ans: const creditedAmount = transactions
@@ -880,14 +880,14 @@ console.log(creditedAmount);
 // 3. Calculate final score
 
 // ### Q7. Game App – Final Score
-const scores = [30, 60, 90, 45, 80];
+// const scores = [30, 60, 90, 45, 80];
 
-const finalScore = scores
-  .filter(score => score > 50)
-  .map(score => score + 10)
-  .reduce((sum, score) => sum + score, 0);
+// const finalScore = scores
+//   .filter(score => score > 50)
+//   .map(score => score + 10)
+//   .reduce((sum, score) => sum + score, 0);
 
-console.log(finalScore);
+// console.log(finalScore);
 
 
 // Ans: const finalScore = scores
@@ -913,14 +913,14 @@ console.log(finalScore);
 
 
 // ### Q8. E-commerce – Total Taxed Amount
-const prices1 = [500, 1200, 3000, 800, 1500];
+// const prices1 = [500, 1200, 3000, 800, 1500];
 
-const finalAmount = prices1
-  .filter(price => price > 1000)
-  .map(price => price * 1.18)
-  .reduce((sum, price) => sum + price, 0);
+// const finalAmount = prices1
+//   .filter(price => price > 1000)
+//   .map(price => price * 1.18)
+//   .reduce((sum, price) => sum + price, 0);
 
-console.log(finalAmount);
+// console.log(finalAmount);
 
 
 // Ans: const finalAmount = prices
@@ -945,14 +945,14 @@ console.log(finalAmount);
 // 3. Find total points earned
 
 // ### Q9. Attendance System – Reward Points
-const hours = [6, 8, 9, 7, 10];
+// const hours = [6, 8, 9, 7, 10];
 
-const totalAttendancePoints = hours
-  .filter(hour => hour >= 8)
-  .map(hour => hour * 10)
-  .reduce((sum, point) => sum + point, 0);
+// const totalAttendancePoints = hours
+//   .filter(hour => hour >= 8)
+//   .map(hour => hour * 10)
+//   .reduce((sum, point) => sum + point, 0);
 
-console.log(totalAttendancePoints);
+// console.log(totalAttendancePoints);
 
 
 
@@ -976,14 +976,14 @@ console.log(totalAttendancePoints);
 // 3. Find the sum of squares
 
 // ### Q10. Interview Brain Teaser ⭐
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 
-const sumOfSquares = numbers
-  .filter(num => num % 2 === 0)
-  .map(num => num * num)
-  .reduce((sum, num) => sum + num, 0);
+// const sumOfSquares = numbers
+//   .filter(num => num % 2 === 0)
+//   .map(num => num * num)
+//   .reduce((sum, num) => sum + num, 0);
 
-console.log(sumOfSquares);
+// console.log(sumOfSquares);
 
 
 
@@ -995,4 +995,113 @@ console.log(sumOfSquares);
 
 // .reduce((sum, num) => sum + num, 0);
 
- 
+
+// find
+// find tyare j use karvu ke jare array mathi ek value find karvi hoy based on condition
+// find() return kare chhe array no element -- > callback no return value nahi
+// never returns what you return inside it
+// returns the array element itself -- not return array
+// .find() stops at the first match
+// It does not continue looping
+
+// let product = ["Laptop", "Mobile", "Tablet",
+// "Desktop", "Smart Watch"];
+// let find_product = product.find( (item) => {
+// // console. log("can't find product"); // notworking why ??
+// if (item === "Mobile") {
+// return true;
+// } else if (item === "Tablet") {
+// return true;
+// } else {
+// return false;
+// }
+// }) ;
+
+
+
+// find vs filter
+// Real-life Scenario: Shopping Mall Security
+// your are a security guard at a shopping mall
+// chack the list of visitors
+// let people = ["John", "Sara", "Mike", "Anna",
+// "David", "Sara"];
+// find -- > you are looking for the first person
+// named "Sara" in the list and stop searching (Pehli
+// var j male, bas e j and Anagal check j na kare)
+// let person = people. find ((name) => name === "Sara");
+// console. log(person);
+
+
+// filter --> you want to find all visitors named "sara" in the list (all data check kare and list ma ena sudhi check kare)
+// let AllSara = people.filter((name)=> name ==="Sara")
+// console.log(AllSara);
+
+
+// Example 2:
+
+
+// some
+// check kare che ke array ma koi pan ek item condition satisfy ke che ke nahi
+// condition true aave tyare stope kare
+// some() vs find() --> some()  can't return you value its return true of false,find() return value of array
+// give ans in true and false
+
+// let marks1 =[10,20,30,90];
+// let any = marks1.some((val) =>{
+//   if(val > 85)
+//     return true;
+// } );
+// console.log(any)
+
+
+// every
+// check kare chhe ke array ma baddha j items condition satisfy kare chhe ke nahi
+// true -- baha items condition match kare
+// false -- ek pan fail thay to
+// let def =[20, 30, 90, 45];
+// let num = def. every(function (val){
+// return val < 40;
+// })
+// console.log(num);
+// use case -- > check all student is pass or not
+
+// some(), find(), filter(), every()
+// let products = ["Tablet", "Mobile", "Laptop", "Mobile"]
+// method -- > condition -- > output
+// .some() -- > item === "Mobile" -- > true
+// let pro = products.some((val) =>  {
+//   if (item === "Mobile") {
+//      return true;
+//   } else {
+//     return false;
+//   }
+// });
+// console.log(pro)
+// // . find() -- > item === "Mobile" -- > "Mobile"
+// .filter() -- > item === "Mobile" -- > ["Mobile", "Mobile"]
+
+
+// Destructuring oprator -- give value to variable (ex. we don't use every time arr1[1], just save it into variable let [ ,k] = arr1)
+let arr4 = [1, 2, 3, 4, 5]
+// let j = arr4[0];
+// let k = arr4[2];
+let [ j, , k] = arr4; // -- > destructuring
+// let [j, , k] = arr;
+console. log(k);
+let user_data = ["test", "test@gmail.com", "Male", "Surat"]
+let [name1,email1,gender1,city1] = user_data;
+console.log("name:" + name1, "email:" + email1 , "gender:" + gender1 , "gender:" + city1);
+
+// name, email, gender, city
+// console. log ("name", name)
+
+
+// spread oprator -- copy value from main array
+let arr8 = [1, 2, 3, 4, 5, 6, 7];
+// let arr4 = arr3 ; // - just give reference not copy value(when you change into arr4 that will be change arr3 too)
+let arr9 = [ ... arr8];
+// ... -- > rest -- > into function
+// ... -- > spred -- > into Array and Object
+let temp_arr = [1, 2, 3];
+let temp_arr2 = [4, 5, 6];
+let mix_arr = [ ... temp_arr, ... temp_arr2];
