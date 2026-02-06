@@ -1105,3 +1105,1072 @@ let arr9 = [ ... arr8];
 let temp_arr = [1, 2, 3];
 let temp_arr2 = [4, 5, 6];
 let mix_arr = [ ... temp_arr, ... temp_arr2];
+
+
+
+
+
+
+
+
+
+/*
+## 1. `.find()` – First even number
+
+**Real life:** Find first available even seat number
+
+```js
+const seats = [3, 5, 8, 10, 7];
+
+const firstEvenSeat = seats.find(seat => seat % 2 === 0);
+```
+
+---
+
+## 2. `.some()` – Any even number?
+
+**Real life:** Check if any VIP seat exists
+
+```js
+const seats = [3, 5, 7, 9];
+
+const hasEvenSeat = seats.some(seat => seat % 2 === 0);
+```
+
+---
+
+## 3. `.find()` – First passing mark
+
+**Real life:** Find first student who passed
+
+```js
+const marks = [25, 35, 40, 60];
+
+const firstPass = marks.find(mark => mark >= 40);
+```
+
+---
+
+## 4. `.some()` – Any failed student?
+
+**Real life:** Check if re-test is needed
+
+```js
+const marks = [60, 70, 55, 30];
+
+const hasFail = marks.some(mark => mark < 40);
+```
+
+---
+
+## 5. `.find()` – First affordable product
+
+**Real life:** Shopping app price filter
+
+```js
+const prices = [1500, 1200, 800, 2000];
+
+const affordable = prices.find(price => price <= 1000);
+```
+
+---
+
+## 6. `.some()` – Any discount item?
+
+**Real life:** Show discount banner
+
+```js
+const prices = [500, 800, 1200, 300];
+
+const hasDiscountItem = prices.some(price => price < 500);
+```
+
+---
+
+## 7. `.find()` – First long word
+
+**Real life:** Auto-suggestion keyword
+
+```js
+const words = ['hi', 'hello', 'javascript', 'ok'];
+
+const longWord = words.find(word => word.length > 5);
+```
+
+---
+
+## 8. `.some()` – Any empty input?
+
+**Real life:** Form validation
+
+```js
+const inputs = ['name', 'email', '', 'password'];
+
+const hasEmpty = inputs.some(input => input === '');
+```
+
+---
+
+## 9. `.find()` – First high transaction
+
+**Real life:** Fraud detection
+
+```js
+const transactions = [200, 500, 1200, 3000, 400];
+
+const highTransaction = transactions.find(amount => amount > 1000);
+```
+
+---
+
+## 10. `.some()` – System alert check ⭐
+
+**Real life:** Check if any value exceeds limit
+
+```js
+const temperatures = [30, 32, 35, 42, 36];
+
+const isOverheated = temperatures.some(temp => temp > 40);
+```
+
+---
+*/
+
+
+// // 1. find() – First even number
+// const seats1 = [3, 5, 8, 10, 7];
+// const firstEvenSeat = seats1.find(seat => seat % 2 === 0);
+// console.log("First Even Seat:", firstEvenSeat);
+
+// // 2. some() – Any even number?
+// const seats2 = [3, 5, 7, 9];
+// const hasEvenSeat = seats2.some(seat => seat % 2 === 0);
+// console.log("Has Even Seat:", hasEvenSeat);
+
+// // 3. find() – First passing mark
+// const marks1 = [25, 35, 40, 60];
+// const firstPass = marks1.find(mark => mark >= 40);
+// console.log("First Passing Mark:", firstPass);
+
+// // 4. some() – Any failed student?
+// const marks2 = [60, 70, 55, 30];
+// const hasFail = marks2.some(mark => mark < 40);
+// console.log("Any Failed Student:", hasFail);
+
+// // 5. find() – First affordable product
+// const prices1 = [1500, 1200, 800, 2000];
+// const affordable = prices1.find(price => price <= 1000);
+// console.log("First Affordable Product:", affordable);
+
+// // 6. some() – Any discount item?
+// const prices2 = [500, 800, 1200, 300];
+// const hasDiscountItem = prices2.some(price => price < 500);
+// console.log("Has Discount Item:", hasDiscountItem);
+
+// // 7. find() – First long word
+// const words = ['hi', 'hello', 'javascript', 'ok'];
+// const longWord = words.find(word => word.length > 5);
+// console.log("First Long Word:", longWord);
+
+// // 8. some() – Any empty input?
+// const input = ['name', 'email', '', 'password'];
+// const hasEmpty = input.some(input => input === '');
+// console.log("Has Empty Input:", hasEmpty);
+
+// // 9. find() – First high transaction
+// const transactions = [200, 500, 1200, 3000, 400];
+// const highTransaction = transactions.find(amount => amount > 1000);
+// console.log("First High Transaction:", highTransaction);
+
+// // 10. some() – System alert check
+// const temperatures = [30, 32, 35, 42, 36];
+// const isOverheated = temperatures.some(temp => temp > 40);
+// console.log("System Overheated:", isOverheated);
+
+
+
+/*
+## create Readmd.md file and write the answers of all questions
+
+### Q1. Shopping List – Price Increase
+
+Increase each price by ₹20 using `map()`.
+
+```js
+const prices = [100, 200, 300];
+```
+
+---
+
+### Q2. Exam Marks – Passing Students
+
+Filter out only passing marks (>= 40).
+
+```js
+const marks = [35, 60, 45, 20, 80];
+```
+
+---
+
+### Q3. Attendance Check
+
+Check if **any day** attendance is less than 75% using `some()`.
+
+```js
+const attendance = [80, 90, 70, 85];
+```
+
+---
+
+### Q4. Find First Discounted Item
+
+Find the first price less than 500 using `find()`.
+
+```js
+const prices = [1200, 800, 450, 600];
+```
+
+---
+
+
+### Q5. Salary Calculation
+
+1. Keep salaries above 20,000
+2. Add bonus of 2,000
+3. Calculate total payout
+   (Use `filter`, `map`, `reduce`)
+
+```js
+const salaries = [18000, 25000, 30000, 15000];
+```
+
+---
+
+### Q6. Product Quality Check
+
+Check if **all products** have rating >= 4 using `every()`.
+
+```js
+const ratings = [4, 5, 4, 4];
+```
+
+---
+
+### Q7. Daily Expenses – Total
+
+Calculate total expenses using `reduce()`.
+
+```js
+const expenses = [200, 150, 300, 100];
+```
+
+---
+
+### Q8. Scores Update
+
+1. Keep scores above 50
+2. Add 10 bonus points
+
+```js
+const scores = [45, 60, 80, 30, 70];
+```
+
+---
+
+### Q9. Array Destructuring – Top Scores
+
+Extract the first two scores into variables.
+
+```js
+const scores = [95, 90, 85, 80];
+```
+
+---
+
+
+### Q10. Shopping Cart Merge
+
+Merge two carts using the **spread operator**.
+
+```js
+const cart1 = [200, 400];
+const cart2 = [300, 500];
+```
+
+---
+
+### Q11. Expense Validation
+
+Check if **all expenses** are below 1000 using `every()`.
+
+```js
+const expenses = [200, 450, 800, 1200];
+```
+
+---
+
+### Q12. Transaction Analysis
+
+1. Find first transaction above 1000
+2. Check if any transaction is negative
+
+```js
+const transactions = [500, -200, 1200, 300];
+```
+
+---
+
+### Q13. Student Result Summary
+
+1. Keep passing marks (>= 40)
+2. Calculate average marks
+
+```js
+const marks = [30, 45, 60, 25, 80];
+```
+
+---
+
+### Q14. Temperature Alert System
+
+1. Check if any temperature exceeds 40
+2. Check if all temperatures are above 20
+
+```js
+const temps = [22, 30, 45, 28];
+```
+
+---
+
+### Q15. Spread + Reduce Combo ⭐
+
+Combine two arrays and find the total sum.
+
+```js
+const a = [1, 2, 3];
+const b = [4, 5, 6];
+```
+
+---
+
+
+### Q16. Bonus Eligibility
+
+Check if **every score** is above the class average.
+
+```js
+const scores = [60, 70, 80, 90];
+```
+
+---
+
+### Q17. First Valid Input
+
+Find the first non-empty input.
+
+```js
+const inputs = ['', '', 'name', 'email'];
+```
+
+---
+
+### Q18. Salary Spread
+
+Create a new salary list by copying existing salaries and adding a new one.
+
+```js
+const salaries = [20000, 30000, 40000];
+```
+
+---
+
+### Q19. Performance Check
+1. Check if any performance score is below 50
+2. Check if all scores are above 60
+
+```js
+const performance = [55, 65, 45, 80];
+```
+
+---
+
+### Q20. Interview Finisher ⭐⭐
+1. Merge arrays
+2. Keep even numbers
+3. Square them
+4. Find total sum
+
+```js
+const x = [1, 2, 3];
+const y = [4, 5, 6];
+```
+
+---
+*/
+
+// Answer
+// Q1
+// const prices10 = [100, 200, 300];
+// const increasedPrices = prices10.map(price => price + 20);
+// console.log("Q1 Increased Prices:", increasedPrices);
+
+// // Q2
+// const marks10 = [35, 60, 45, 20, 80];
+// const passingMarks = marks10.filter(mark => mark >= 40);
+// console.log("Q2 Passing Marks:", passingMarks);
+
+// // Q3
+// const attendance = [80, 90, 70, 85];
+// const lowAttendance = attendance.some(day => day < 75);
+// console.log("Q3 Any Attendance < 75:", lowAttendance);
+
+// // Q4
+// const prices20 = [1200, 800, 450, 600];
+// const firstDiscount = prices20.find(price => price < 500);
+// console.log("Q4 First Discounted Item:", firstDiscount);
+
+// // Q5
+// const salaries1 = [18000, 25000, 30000, 15000];
+// const totalPayout = salaries1
+//   .filter(salary => salary > 20000)
+//   .map(salary => salary + 2000)
+//   .reduce((total, salary) => total + salary, 0);
+// console.log("Q5 Total Salary Payout:", totalPayout);
+
+// // Q6
+// const ratings = [4, 5, 4, 4];
+// const allGoodRatings = ratings.every(rate => rate >= 4);
+// console.log("Q6 All Ratings >= 4:", allGoodRatings);
+
+// // Q7
+// const expenses1 = [200, 150, 300, 100];
+// const totalExpenses = expenses1.reduce((sum, exp) => sum + exp, 0);
+// console.log("Q7 Total Expenses:", totalExpenses);
+
+// // Q8
+// const scores1 = [45, 60, 80, 30, 70];
+// const updatedScores = scores1
+//   .filter(score => score > 50)
+//   .map(score => score + 10);
+// console.log("Q8 Updated Scores:", updatedScores);
+
+// // Q9
+// const scores2 = [95, 90, 85, 80];
+// const [firstScore, secondScore] = scores2;
+// console.log("Q9 Top Scores:", firstScore, secondScore);
+
+// // Q10
+// const cart1 = [200, 400];
+// const cart2 = [300, 500];
+// const mergedCart = [...cart1, ...cart2];
+// console.log("Q10 Merged Cart:", mergedCart);
+
+// // Q11
+// const expenses2 = [200, 450, 800, 1200];
+// const allBelowLimit = expenses2.every(exp => exp < 1000);
+// console.log("Q11 All Expenses < 1000:", allBelowLimit);
+
+// // Q12
+// const transactions1 = [500, -200, 1200, 300];
+// const firstHighTxn = transactions1.find(txn => txn > 1000);
+// const hasNegativeTxn = transactions1.some(txn => txn < 0);
+// console.log("Q12 First High Transaction:", firstHighTxn);
+// console.log("Q12 Any Negative Transaction:", hasNegativeTxn);
+
+// // Q13
+// const marks20 = [30, 45, 60, 25, 80];
+// const passMarks = marks20.filter(mark => mark >= 40);
+// const averageMarks =
+//   passMarks.reduce((sum, mark) => sum + mark, 0) / passMarks.length;
+// console.log("Q13 Passing Marks:", passMarks);
+// console.log("Q13 Average Marks:", averageMarks);
+
+// // Q14
+// const temps = [22, 30, 45, 28];
+// const anyHighTemp = temps.some(temp => temp > 40);
+// const allAbove20 = temps.every(temp => temp > 20);
+// console.log("Q14 Any Temp > 40:", anyHighTemp);
+// console.log("Q14 All Temps > 20:", allAbove20);
+
+// // Q15
+// const a = [1, 2, 3];
+// const b = [4, 5, 6];
+// const totalSum = [...a, ...b].reduce((sum, num) => sum + num, 0);
+// console.log("Q15 Total Sum:", totalSum);
+
+// // Q16
+// const scores3 = [60, 70, 80, 90];
+// const avgScore =
+//   scores3.reduce((sum, score) => sum + score, 0) / scores3.length;
+// const allAboveAvg = scores3.every(score => score > avgScore);
+// console.log("Q16 Class Average:", avgScore);
+// console.log("Q16 All Above Average:", allAboveAvg);
+
+// // Q17
+// const inputs = ['', '', 'name', 'email'];
+// const firstValidInput = inputs.find(input => input !== '');
+// console.log("Q17 First Valid Input:", firstValidInput);
+
+// // Q18
+// const salaries2 = [20000, 30000, 40000];
+// const updatedSalaries = [...salaries2, 50000];
+// console.log("Q18 Updated Salaries:", updatedSalaries);
+
+// // Q19
+// const performance = [55, 65, 45, 80];
+// const anyBelow50 = performance.some(score => score < 50);
+// const allAbove60 = performance.every(score => score > 60);
+// console.log("Q19 Any Below 50:", anyBelow50);
+// console.log("Q19 All Above 60:", allAbove60);
+
+// // Q20
+// const x = [1, 2, 3];
+// const y = [4, 5, 6];
+// const finalResult = [...x, ...y]
+//   .filter(num => num % 2 === 0)
+//   .map(num => num * num)
+//   .reduce((sum, num) => sum + num, 0);
+// console.log("Q20 Final Result:", finalResult);
+
+
+
+
+/*
+## create Readmd.md file and write the answers of all questions
+### Q1. Increase all prices by 10
+
+```js
+const prices = [100, 200, 300];
+```
+
+### Q2. Filter even numbers
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+```
+
+### Q3. Check if any number is negative
+
+```js
+const nums = [10, -5, 20];
+```
+
+### Q4. Check if all marks are passing (>=40)
+
+```js
+const marks = [45, 60, 70];
+```
+
+### Q5. Find first number greater than 50
+
+```js
+const scores = [20, 40, 55, 70];
+```
+
+### Q6. Calculate total bill amount
+
+```js
+const bills = [120, 300, 80];
+```
+
+### Q7. Convert hours to minutes
+
+```js
+const hours = [1, 2, 1.5];
+```
+
+### Q8. Find first empty string
+
+```js
+const inputs = ['name', '', 'email'];
+```
+
+### Q9. Check if any value is zero
+
+```js
+const values = [5, 0, 8];
+```
+
+### Q10. Double all numbers
+
+```js
+const nums = [2, 4, 6];
+```
+
+### Q11. Extract first two values using destructuring
+
+```js
+const data = [10, 20, 30];
+```
+
+### Q12. Merge two arrays using spread
+
+```js
+const a = [1, 2];
+const b = [3, 4];
+```
+
+### Q13. Check if all temperatures are below 50
+
+```js
+const temps = [30, 40, 45];
+```
+
+### Q14. Find first even number
+
+```js
+const nums = [1, 3, 4, 6];
+```
+
+### Q15. Calculate total steps walked
+
+```js
+const steps = [2000, 3000, 1500];
+```
+
+### Q16. Filter salaries above 25,000
+
+```js
+const salaries = [18000, 26000, 30000];
+```
+
+### Q17. Add bonus of 500 to filtered salaries (>20000)
+
+```js
+const salaries = [15000, 22000, 28000];
+```
+
+### Q18. Total expense after filtering (>100)
+
+```js
+const expenses = [50, 200, 150, 80];
+```
+
+### Q19. Check if any score is below class average
+
+```js
+const scores = [60, 70, 80];
+```
+
+### Q20. Find first number divisible by 7
+
+```js
+const nums = [10, 14, 21];
+```
+
+### Q21. Convert prices to discounted prices (10%)
+
+```js
+const prices = [500, 1000, 1500];
+```
+
+### Q22. Total calories burned (>30 min only)
+
+```js
+const minutes = [20, 45, 60];
+```
+
+### Q23. Check if all inputs are filled
+
+```js
+const inputs = ['name', 'email', 'password'];
+```
+
+### Q24. Merge 3 arrays using spread
+
+```js
+const a = [1];
+const b = [2];
+const c = [3];
+```
+
+### Q25. Find first failing mark
+
+```js
+const marks = [55, 48, 35, 70];
+```
+
+### Q26. Calculate average marks of passed students
+
+```js
+const marks = [30, 45, 60, 80];
+```
+
+### Q27. Square only odd numbers
+
+```js
+const nums = [1, 2, 3, 4, 5];
+```
+
+### Q28. Check if any value exceeds 1000
+
+```js
+const values = [200, 500, 1500];
+```
+
+### Q29. Extract first and rest values using destructuring
+
+```js
+const nums = [10, 20, 30, 40];
+```
+
+### Q30. Total reward points (>=8 hours only)
+
+```js
+const hours = [6, 8, 9, 7];
+```
+
+### Q31. Find first word longer than 4 characters
+
+```js
+const words = ['hi', 'hello', 'world'];
+```
+
+### Q32. Check if all numbers are even
+
+```js
+const nums = [2, 4, 6, 8];
+```
+
+### Q33. Combine arrays and filter positives
+
+```js
+const a = [1, -2];
+const b = [3, -4];
+```
+
+### Q34. Total bill after tax (5%)
+
+```js
+const prices = [200, 400];
+```
+
+### Q35. Find first temperature above average
+
+```js
+const temps = [20, 30, 40];
+```
+
+---
+
+### Q36. Combine arrays, keep even numbers, find sum
+
+```js
+const a = [1, 2, 3];
+const b = [4, 5, 6];
+```
+
+### Q37. Check if every score is above average
+
+```js
+const scores = [60, 70, 80];
+```
+
+### Q38. Find first transaction above total average
+
+```js
+const tx = [100, 500, 900];
+```
+
+### Q39. Total of squared even numbers
+
+```js
+const nums = [1, 2, 3, 4, 5];
+```
+
+### Q40. Merge arrays, remove negatives, total sum
+
+```js
+const a = [-1, 2];
+const b = [3, -4];
+```
+
+### Q41. Check if any value is prime
+
+```js
+const nums = [4, 6, 9, 11];
+```
+
+### Q42. Calculate weighted total (double values >50)
+
+```js
+const values = [30, 60, 80];
+```
+
+### Q43. Find first value greater than cumulative sum
+
+```js
+const nums = [10, 20, 50];
+```
+
+### Q44. Total salary payout after bonus and tax
+
+```js
+const salaries = [20000, 30000];
+```
+
+### Q45. Check if all prices are within budget (<=1000)
+
+```js
+const prices = [400, 800, 1200];
+```
+
+### Q46. Combine arrays and find maximum value
+
+```js
+const a = [10, 40];
+const b = [30, 20];
+```
+
+### Q47. Find first value failing custom rule (>2×avg)
+
+```js
+const nums = [10, 20, 60];
+```
+
+### Q48. Total distance after bonus km (>5 only)
+
+```js
+const km = [3, 6, 10];
+```
+
+### Q49. Check if every element is unique
+
+```js
+const nums = [1, 2, 3, 2];
+```
+
+### Q50. FINAL BOSS ⭐⭐⭐
+
+1. Merge arrays
+2. Keep numbers > average
+3. Square them
+4. Find total sum
+
+```js
+const a = [1, 2, 3];
+const b = [4, 5, 6];
+```
+*/
+
+
+// Q1
+const prices1 = [100, 200, 300];
+console.log("Q1:", prices1.map(p => p + 10));
+
+// Q2
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log("Q2:", numbers.filter(n => n % 2 === 0));
+
+// Q3
+const nums1 = [10, -5, 20];
+console.log("Q3:", nums1.some(n => n < 0));
+
+// Q4
+const marks1 = [45, 60, 70];
+console.log("Q4:", marks1.every(m => m >= 40));
+
+// Q5
+const scores1 = [20, 40, 55, 70];
+console.log("Q5:", scores1.find(s => s > 50));
+
+// Q6
+const bills = [120, 300, 80];
+console.log("Q6:", bills.reduce((sum, b) => sum + b, 0));
+
+// Q7
+const hours1 = [1, 2, 1.5];
+console.log("Q7:", hours1.map(h => h * 60));
+
+// Q8
+const inputs1 = ['name', '', 'email'];
+console.log("Q8:", inputs1.find(i => i === ''));
+
+// Q9
+const values1 = [5, 0, 8];
+console.log("Q9:", values1.some(v => v === 0));
+
+// Q10
+const nums2 = [2, 4, 6];
+console.log("Q10:", nums2.map(n => n * 2));
+
+// Q11
+const data = [10, 20, 30];
+const [d1, d2] = data;
+console.log("Q11:", d1, d2);
+
+// Q12
+const a1 = [1, 2];
+const b1 = [3, 4];
+console.log("Q12:", [...a1, ...b1]);
+
+// Q13
+const temps1 = [30, 40, 45];
+console.log("Q13:", temps1.every(t => t < 50));
+
+// Q14
+const nums3 = [1, 3, 4, 6];
+console.log("Q14:", nums3.find(n => n % 2 === 0));
+
+// Q15
+const steps = [2000, 3000, 1500];
+console.log("Q15:", steps.reduce((s, n) => s + n, 0));
+
+// Q16
+const salaries1 = [18000, 26000, 30000];
+console.log("Q16:", salaries1.filter(s => s > 25000));
+
+// Q17
+const salaries2 = [15000, 22000, 28000];
+console.log("Q17:", salaries2.filter(s => s > 20000).map(s => s + 500));
+
+// Q18
+const expenses1 = [50, 200, 150, 80];
+console.log("Q18:", expenses1.filter(e => e > 100).reduce((s, e) => s + e, 0));
+
+// Q19
+const scores2 = [60, 70, 80];
+const avg1 = scores2.reduce((s, n) => s + n, 0) / scores2.length;
+console.log("Q19:", scores2.some(s => s < avg1));
+
+// Q20
+const nums4 = [10, 14, 21];
+console.log("Q20:", nums4.find(n => n % 7 === 0));
+
+// Q21
+const prices2 = [500, 1000, 1500];
+console.log("Q21:", prices2.map(p => p * 0.9));
+
+// Q22
+const minutes = [20, 45, 60];
+console.log("Q22:", minutes.filter(m => m > 30).reduce((s, m) => s + m, 0));
+
+// Q23
+const inputs2 = ['name', 'email', 'password'];
+console.log("Q23:", inputs2.every(i => i !== ''));
+
+// Q24
+const a2 = [1], b2 = [2], c2 = [3];
+console.log("Q24:", [...a2, ...b2, ...c2]);
+
+// Q25
+const marks2 = [55, 48, 35, 70];
+console.log("Q25:", marks2.find(m => m < 40));
+
+// Q26
+const marks3 = [30, 45, 60, 80];
+const passed = marks3.filter(m => m >= 40);
+console.log("Q26:", passed.reduce((s, m) => s + m, 0) / passed.length);
+
+// Q27
+const nums5 = [1, 2, 3, 4, 5];
+console.log("Q27:", nums5.filter(n => n % 2 !== 0).map(n => n * n));
+
+// Q28
+const values2 = [200, 500, 1500];
+console.log("Q28:", values2.some(v => v > 1000));
+
+// Q29
+const nums6 = [10, 20, 30, 40];
+const [first, ...rest] = nums6;
+console.log("Q29:", first, rest);
+
+// Q30
+const hours2 = [6, 8, 9, 7];
+console.log("Q30:", hours2.filter(h => h >= 8).reduce((s, h) => s + h, 0));
+
+// Q31
+const words = ['hi', 'hello', 'world'];
+console.log("Q31:", words.find(w => w.length > 4));
+
+// Q32
+const nums7 = [2, 4, 6, 8];
+console.log("Q32:", nums7.every(n => n % 2 === 0));
+
+// Q33
+const a3 = [1, -2];
+const b3 = [3, -4];
+console.log("Q33:", [...a3, ...b3].filter(n => n > 0));
+
+// Q34
+const prices3 = [200, 400];
+console.log("Q34:", prices3.reduce((s, p) => s + p * 1.05, 0));
+
+// Q35
+const temps2 = [20, 30, 40];
+const avgTemp = temps2.reduce((s, t) => s + t, 0) / temps2.length;
+console.log("Q35:", temps2.find(t => t > avgTemp));
+
+// Q36
+const a4 = [1, 2, 3];
+const b4 = [4, 5, 6];
+console.log("Q36:", [...a4, ...b4].filter(n => n % 2 === 0).reduce((s, n) => s + n, 0));
+
+// Q37
+const scores3 = [60, 70, 80];
+const avg2 = scores3.reduce((s, n) => s + n, 0) / scores3.length;
+console.log("Q37:", scores3.every(s => s > avg2));
+
+// Q38
+const tx = [100, 500, 900];
+const avgTx = tx.reduce((s, n) => s + n, 0) / tx.length;
+console.log("Q38:", tx.find(t => t > avgTx));
+
+// Q39
+const nums8 = [1, 2, 3, 4, 5];
+console.log("Q39:", nums8.filter(n => n % 2 === 0).map(n => n * n).reduce((s, n) => s + n, 0));
+
+// Q40
+const a5 = [-1, 2];
+const b5 = [3, -4];
+console.log("Q40:", [...a5, ...b5].filter(n => n > 0).reduce((s, n) => s + n, 0));
+
+// Q41
+const nums9 = [4, 6, 9, 11];
+const isPrime = n => n > 1 && [...Array(n).keys()].slice(2).every(i => n % i !== 0);
+console.log("Q41:", nums9.some(isPrime));
+
+// Q42
+const values3 = [30, 60, 80];
+console.log("Q42:", values3.map(v => v > 50 ? v * 2 : v).reduce((s, v) => s + v, 0));
+
+// Q43
+const nums10 = [10, 20, 50];
+let sum = 0;
+console.log("Q43:", nums10.find(n => (sum += n) < n));
+
+// Q44
+const salaries3 = [20000, 30000];
+console.log("Q44:", salaries3.map(s => s + 2000).map(s => s * 0.9).reduce((t, s) => t + s, 0));
+
+// Q45
+const prices4 = [400, 800, 1200];
+console.log("Q45:", prices4.every(p => p <= 1000));
+
+// Q46
+const a6 = [10, 40];
+const b6 = [30, 20];
+console.log("Q46:", Math.max(...a6, ...b6));
+
+// Q47
+const nums11 = [10, 20, 60];
+const avg3 = nums11.reduce((s, n) => s + n, 0) / nums11.length;
+console.log("Q47:", nums11.find(n => n > 2 * avg3));
+
+// Q48
+const km = [3, 6, 10];
+console.log("Q48:", km.filter(k => k > 5).map(k => k + 2).reduce((s, k) => s + k, 0));
+
+// Q49
+const nums12 = [1, 2, 3, 2];
+console.log("Q49:", new Set(nums12).size === nums12.length);
+
+// Q50 FINAL
+const a7 = [1, 2, 3];
+const b7 = [4, 5, 6];
+const all = [...a7, ...b7];
+const avgFinal = all.reduce((s, n) => s + n, 0) / all.length;
+console.log(
+  "Q50:",
+  all.filter(n => n > avgFinal).map(n => n * n).reduce((s, n) => s + n, 0)
+);

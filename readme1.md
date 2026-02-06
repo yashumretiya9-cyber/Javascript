@@ -1930,3 +1930,477 @@ Expected output:
 ## 🏁 Conclusion
 
 These JavaScript array methods and operators are essential for writing clean, efficient, and maintainable code. Mastering them improves problem-solving and real-world application development.
+
+
+## Examaples
+# JavaScript Array Methods – Logic Based Assignment (Q1–Q50)
+
+This README explains the logic used in each question based on the given
+examples. No code is included. Each answer focuses on:
+• Which method is used
+• Why it is used
+• How the example data is processed logically
+
+---
+
+## Q1. Increase all prices by 10
+Logic:
+Each price is increased by 10%. `map()` is used because every value must
+be modified while keeping the array length the same.
+
+Example logic:
+100 becomes 110.
+
+---
+
+## Q2. Filter even numbers
+Logic:
+Only numbers divisible by 2 are required. `filter()` keeps only values
+that satisfy the condition.
+
+Example logic:
+From [1, 2, 3, 4], only 2 and 4 remain.
+
+---
+
+## Q3. Check if any number is negative
+Logic:
+We check whether at least one number is negative. `some()` returns true
+as soon as it finds a negative value.
+
+Example logic:
+If -5 exists, result is true.
+
+---
+
+## Q4. Check if all marks are passing (>=40)
+Logic:
+Every mark must be 40 or above. `every()` ensures all values satisfy
+the condition.
+
+Example logic:
+One mark below 40 makes the result false.
+
+---
+
+## Q5. Find first number greater than 50
+Logic:
+Only the first matching value is required. `find()` returns the first
+number greater than 50.
+
+Example logic:
+From [20, 40, 55, 70], result is 55.
+
+---
+
+## Q6. Calculate total bill amount
+Logic:
+All bill values are added together. `reduce()` accumulates the sum.
+
+Example logic:
+120 + 300 + 80 = 500.
+
+---
+
+## Q7. Convert hours to minutes
+Logic:
+Each hour value is converted into minutes. `map()` multiplies every
+value by 60.
+
+Example logic:
+2 hours = 120 minutes.
+
+---
+
+## Q8. Find first empty string
+Logic:
+Used for input validation. `find()` returns the first empty string.
+
+Example logic:
+['name', '', 'email'] → empty string found.
+
+---
+
+## Q9. Check if any value is zero
+Logic:
+Only one zero is enough. `some()` checks for existence of zero.
+
+Example logic:
+[5, 0, 8] → true.
+
+---
+
+## Q10. Double all numbers
+Logic:
+Every number must be doubled. `map()` transforms each value.
+
+Example logic:
+[2, 4] → [4, 8].
+
+---
+
+## Q11. Extract first two values using destructuring
+Logic:
+Array destructuring assigns first two values to variables.
+
+Example logic:
+[10, 20, 30] → 10 and 20 extracted.
+
+---
+
+## Q12. Merge two arrays using spread
+Logic:
+Spread operator combines arrays into one.
+
+Example logic:
+[1, 2] + [3, 4] → [1, 2, 3, 4].
+
+---
+
+## Q13. Check if all temperatures are below 50
+Logic:
+All temperatures must satisfy the condition. `every()` verifies this.
+
+Example logic:
+If one value is 55, result is false.
+
+---
+
+## Q14. Find first even number
+Logic:
+`find()` returns the first number divisible by 2.
+
+Example logic:
+[1, 3, 4, 6] → 4.
+
+---
+
+## Q15. Calculate total steps walked
+Logic:
+Steps are summed using `reduce()`.
+
+Example logic:
+2000 + 3000 + 1500 = 6500.
+
+---
+
+## Q16. Filter salaries above 25,000
+Logic:
+`filter()` removes salaries below the threshold.
+
+Example logic:
+[18000, 26000, 30000] → [26000, 30000].
+
+---
+
+## Q17. Add bonus of 500 to filtered salaries (>20000)
+Logic:
+First salaries are filtered, then bonus is added using `map()`.
+
+Example logic:
+22000 becomes 22500.
+
+---
+
+## Q18. Total expense after filtering (>100)
+Logic:
+Expenses greater than 100 are filtered and summed.
+
+Example logic:
+[200, 150] → total = 350.
+
+---
+
+## Q19. Check if any score is below class average
+Logic:
+Average is calculated first. `some()` checks if any score is below it.
+
+Example logic:
+Average 70, score 60 → true.
+
+---
+
+## Q20. Find first number divisible by 7
+Logic:
+`find()` locates the first number divisible by 7.
+
+Example logic:
+[10, 14, 21] → 14.
+
+---
+
+## Q21. Convert prices to discounted prices (10%)
+Logic:
+Each price is reduced by 10% using `map()`.
+
+Example logic:
+1000 → 900.
+
+---
+
+## Q22. Total calories burned (>30 min only)
+Logic:
+Minutes above 30 are filtered and calories are calculated.
+
+Example logic:
+45 min counted, 20 min ignored.
+
+---
+
+## Q23. Check if all inputs are filled
+Logic:
+No input should be empty. `every()` validates all fields.
+
+Example logic:
+Missing value → false.
+
+---
+
+## Q24. Merge 3 arrays using spread
+Logic:
+All arrays are combined into one.
+
+Example logic:
+[1], [2], [3] → [1, 2, 3].
+
+---
+
+## Q25. Find first failing mark
+Logic:
+`find()` returns the first mark below passing criteria.
+
+Example logic:
+[55, 48, 35] → 35.
+
+---
+
+## Q26. Calculate average marks of passed students
+Logic:
+Passing marks are filtered, then average is calculated.
+
+Example logic:
+[45, 60, 80] → average of these values.
+
+---
+
+## Q27. Square only odd numbers
+Logic:
+Odd numbers are filtered and squared.
+
+Example logic:
+[1, 3, 5] → [1, 9, 25].
+
+---
+
+## Q28. Check if any value exceeds 1000
+Logic:
+`some()` checks if any value crosses the limit.
+
+Example logic:
+1500 → true.
+
+---
+
+## Q29. Extract first and rest values using destructuring
+Logic:
+Destructuring separates first element and remaining array.
+
+Example logic:
+[10, 20, 30] → first = 10, rest = [20, 30].
+
+---
+
+## Q30. Total reward points (>=8 hours only)
+Logic:
+Hours >= 8 are filtered and added.
+
+Example logic:
+8 and 9 hours counted, 6 ignored.
+
+---
+
+## Q31. Find first word longer than 4 characters
+Logic:
+`find()` returns the first word whose length exceeds 4.
+
+Example logic:
+['hi', 'hello', 'world'] → 'hello'.
+
+---
+
+## Q32. Check if all numbers are even
+Logic:
+Every number must be even. `every()` validates this.
+
+Example logic:
+[2, 4, 6] → true.
+
+---
+
+## Q33. Combine arrays and filter positives
+Logic:
+Arrays are merged, then positive values are filtered.
+
+Example logic:
+[1, -2, 3, -4] → [1, 3].
+
+---
+
+## Q34. Total bill after tax (5%)
+Logic:
+Tax is added using `map()` and total is calculated using `reduce()`.
+
+Example logic:
+200 → 210 after tax.
+
+---
+
+## Q35. Find first temperature above average
+Logic:
+Average is calculated first. `find()` returns first value above it.
+
+Example logic:
+Average 30 → 40 returned.
+
+---
+
+## Q36. Combine arrays, keep even numbers, find sum
+Logic:
+Arrays are merged, even numbers filtered, then summed.
+
+Example logic:
+[2, 4, 6] → total = 12.
+
+---
+
+## Q37. Check if every score is above average
+Logic:
+Average is calculated. `every()` checks all scores.
+
+Example logic:
+One score below avg → false.
+
+---
+
+## Q38. Find first transaction above total average
+Logic:
+Average is calculated, then `find()` locates first higher value.
+
+Example logic:
+Average 500 → 900.
+
+---
+
+## Q39. Total of squared even numbers
+Logic:
+Even numbers are filtered, squared, and summed.
+
+Example logic:
+2² + 4² = 20.
+
+---
+
+## Q40. Merge arrays, remove negatives, total sum
+Logic:
+Arrays merged, negatives removed, values summed.
+
+Example logic:
+[2, 3] → total = 5.
+
+---
+
+## Q41. Check if any value is prime
+Logic:
+Each number is checked for primality. `some()` returns true if found.
+
+Example logic:
+11 is prime → true.
+
+---
+
+## Q42. Calculate weighted total (double values >50)
+Logic:
+Values greater than 50 are doubled and summed.
+
+Example logic:
+60 → 120.
+
+---
+
+## Q43. Find first value greater than cumulative sum
+Logic:
+Running sum is tracked. `find()` checks each value.
+
+Example logic:
+50 > (10 + 20) → true.
+
+---
+
+## Q44. Total salary payout after bonus and tax
+Logic:
+Bonus is added, tax is applied, and total payout is calculated.
+
+Example logic:
+Salary increased, then reduced by tax.
+
+---
+
+## Q45. Check if all prices are within budget (<=1000)
+Logic:
+`every()` ensures all prices are within limit.
+
+Example logic:
+1200 breaks condition → false.
+
+---
+
+## Q46. Combine arrays and find maximum value
+Logic:
+Arrays merged, `Math.max()` used on combined data.
+
+Example logic:
+[10, 40, 30, 20] → max = 40.
+
+---
+
+## Q47. Find first value failing custom rule (>2×avg)
+Logic:
+Average calculated, `find()` checks rule.
+
+Example logic:
+60 > 2×30 → failing value.
+
+---
+
+## Q48. Total distance after bonus km (>5 only)
+Logic:
+Distances above 5 are selected and bonus applied.
+
+Example logic:
+6 and 10 counted.
+
+---
+
+## Q49. Check if every element is unique
+Logic:
+Duplicates are checked using comparison logic.
+
+Example logic:
+[1, 2, 3, 2] → false.
+
+---
+
+## Q50. FINAL BOSS ⭐⭐⭐
+Logic:
+1. Arrays are merged
+2. Average is calculated
+3. Values above average are filtered
+4. Filtered values are squared
+5. Squared values are summed
+
+Example logic:
+[1–6] → values above average squared → total calculated.
+
+---
+
+## End of Assignment
