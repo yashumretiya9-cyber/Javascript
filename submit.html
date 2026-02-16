@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Card</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding:20px;
+}
+
+h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+/* ===== FORM ===== */
+
+form{
+    margin-bottom:30px;
+}
+
+form input,
+form textarea{
+    width:250px;
+    padding:8px;
+    margin-bottom:10px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+form textarea{
+    resize:none;
+    height:60px;
+}
+
+form input[type="submit"]{
+    width:auto;
+    padding:6px 15px;
+    cursor:pointer;
+    background-color: aqua;
+}
+
+form input[type="submit"]:hover{
+    background-color: blue;
+    color:white;
+}
+
+/* ===== CARD ===== */
+
+.card{
+    width:400px;
+    border:2px solid red;
+    padding:20px;
+    display:flex;
+    align-items:flex-start;
+    gap:80px;
+    margin-top:20px;
+    display: inline-block;
+}
+
+/* Profile Image */
+
+.dp-img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    overflow:hidden;
+    flex-shrink:0;
+}
+
+.dp-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Text Container (auto vertical) */
+
+.card h3,
+.card h4,
+.card h5,
+.card h6{
+    display:block;
+    margin:4px 0;
+}
+
+/* Make text column layout */
+
+.card{
+    flex-wrap:wrap;
+}
+
+.card h3{
+    font-size:22px;
+    font-weight:bold;
+    width:100%;
+}
+
+.card h4,
+.card h5,
+.card h6{
+    font-size:16px;
+    font-weight:normal;
+    width:100%;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<h1>Create a Card</h1>
+
+<form>
+    <input type="text" placeholder="Paste link for profile image"><br>
+    <input type="text" placeholder="Name"><br>
+    <input type="text" placeholder="Bio"><br>
+    <input type="email" placeholder="Email"><br>
+    <input type="tel" placeholder="Phone Number"><br>
+    <textarea placeholder="Write about you..."></textarea><br>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
+<script src="submit.js"></script>
+
+</body>
+</html>
