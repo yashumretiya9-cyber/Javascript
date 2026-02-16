@@ -78,3 +78,23 @@ let form = document.querySelector("form");
 form.addEventListener("submit", ()=>{
 document.body.style.backgroundColor= "black";
 })
+
+
+let card = document.querySelector(".card");
+
+card.addEventListener("mousemove",(dets)=>{
+    card.classList.add("card-hover");
+    console.log(dets);
+});
+
+card.addEventListener("mouseout",(dets)=>{
+    card.classList.remove("card-hover");
+    console.log(dets);
+}); 
+
+
+
+
+// mousemove effect
+
+// keyup self
