@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offer Card</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Offer Card */
+.offer-card {
+  background: #ffffff;
+  width: 600px;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.offer-card h1 {
+  color: darkred;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.image-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 25px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-card p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.price {
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  margin-right: 10px;
+}
+
+.new-price {
+  font-weight: bold;
+  color: black;
+}
+
+.close-btn {
+  padding: 10px 25px;
+  border: 2px solid darkred;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background: darkred;
+  color: white;
+}
+
+/* Download Card */
+.outer {
+  width: 300px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #222;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.progress-card {
+  margin: 10px 0;
+  height: 6px;
+  width: 100%;
+  background-color: #555;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: white;
+}
+
+.percent {
+  font-size: 16px;
+  color: #d1d1d1;
+}
+
+.outer h2 {
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+  <div class="offer-card">
+    <h1>Limited Time Offer</h1>
+
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa" alt="Watch">
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Obcaecati error aut vel vero excepturi asperiores.
+    </p>
+
+    <div class="price">
+      <span class="old-price">Rs. 5,00,000</span>
+      <span class="new-price">Rs. 4,80,000</span>
+    </div>
+
+    <button class="close-btn">Close</button>
+  </div>
+</div>
+
+<div class="outer">
+  <h2>Downloading ...</h2>
+  <div class="progress-card">
+    <div class="progress-bar"></div>
+  </div>
+  <p class="percent">0%</p>
+</div>
+  <script src="Timmer.js"></script>
+</body>
+</html>
